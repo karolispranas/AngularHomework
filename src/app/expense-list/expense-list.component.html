@@ -1,0 +1,14 @@
+<p>expense-list works!</p>
+
+<h3 class="mt-5">Expenses list</h3>
+<table class="table mt-3">
+  <tbody>
+  <tr *ngFor="let expense of expensesList">
+    <td>
+      <a [routerLink]="['/expenses', expense.id ]">{{ expense.name }}</a>
+    </td>
+    <td>{{ expense.name  }}</td>
+    <td>&euro;{{ expense.amount }}</td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,19 @@
+<p>expense-details works!</p>
+
+<h3 class="mt-5">Details about the expenses</h3>
+<table class="table mt-3">
+  <tbody>
+  <tr>
+    <td>Name: </td>
+    <td>{{ expense.name  }}</td>
+  </tr>
+  <tr>
+    <td>Amount: </td>
+    <td>&euro;{{ expense.amount }}</td>
+  </tr>
+  <tr *ngIf="expense.description">
+    <td>Description: </td>
+    <td>{{expense.description}}</td>
+  </tr>
+  </tbody>
+</table>
